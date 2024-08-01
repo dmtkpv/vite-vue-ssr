@@ -4,7 +4,7 @@
   "type": "module",
   "bin": "./bin/build.js",
   "dependencies": {
-    "@unhead/ssr": "^1.9.16",
+    "@unhead/dom": "^1.9.16",
     "jsdom": "^21.1.2"
   },
   "peerDependencies": {

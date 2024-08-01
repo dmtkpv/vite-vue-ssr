@@ -41,7 +41,7 @@ importers:
 
   lib:
     dependencies:
-      '@unhead/ssr':
+      '@unhead/dom':
         specifier: ^1.9.16
         version: 1.9.16
       '@unhead/vue':
@@ -229,9 +229,6 @@ packages:
 
   '@unhead/shared@1.9.16':
     resolution: {integrity: sha512-pfJnArULCY+GBr7OtYyyxihRiQLkT31TpyK6nUKIwyax4oNOGyhNfk0RFzNq16BwLg60d1lrc5bd5mZGbfClMA==}
-
-  '@unhead/ssr@1.9.16':
-    resolution: {integrity: sha512-8R1qt4VAemX4Iun/l7DnUBJqmxA/KaUSc2+/hRYPJYOopXdCWkoaxC1K1ROX2vbRF7qmjdU5ik/a27kSPN94gg==}
 
   '@unhead/vue@1.9.16':
     resolution: {integrity: sha512-kpMWWwm8cOwo4gw4An43pz30l2CqNtmJpX5Xsu79rwf6Viq8jHAjk6BGqyKy220M2bpa0Va4fnR532SgGO1YgQ==}
@@ -934,11 +931,6 @@ snapshots:
   '@unhead/shared@1.9.16':
     dependencies:
       '@unhead/schema': 1.9.16
-
-  '@unhead/ssr@1.9.16':
-    dependencies:
-      '@unhead/schema': 1.9.16
-      '@unhead/shared': 1.9.16
 
   '@unhead/vue@1.9.16(vue@3.4.35)':
     dependencies:
