@@ -1,9 +1,9 @@
 import { h, inject } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
-import { createHead, useHead } from '@vueuse/head'
+import { createHead, useHead } from '@unhead/vue'
 import axios from 'axios'
-import createApp from '@dmtkpv/ssr/createApp'
-import createRouter from '@dmtkpv/ssr/createRouter'
+import createApp from 'vite-vue-ssr/createApp'
+import createRouter from 'vite-vue-ssr/createRouter'
 
 
 

@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "example": "pnpm --filter example",
+    "lib": "pnpm --filter vite-vue-ssr"
+  }
+}

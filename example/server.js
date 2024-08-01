@@ -1,5 +1,5 @@
 import express from 'express';
-import createSSR from '@dmtkpv/ssr/createSSR';
+import createSSR from 'vite-vue-ssr/createSSR';
 import isMobile from 'is-mobile'
 
 (async () => {
