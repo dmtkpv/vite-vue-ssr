@@ -6,7 +6,11 @@ import isMobile from 'is-mobile'
 
     const port = 49049;
     const app = express();
-    const ssr = await createSSR();
+
+    const ssr = await createSSR({
+        mode: process.env.NODE_ENV,
+        build: false
+    });
 
     app.use(ssr.middlewares);
 

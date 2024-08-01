@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "build": "vite-vue-ssr",
-    "dev": "node server",
+    "dev": "NODE_ENV=development node server",
     "prod": "NODE_ENV=production node server"
   },
   "devDependencies": {
