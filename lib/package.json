@@ -1,0 +1,38 @@
+{
+  "name": "vite-vue-ssr",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": "./bin/build.js",
+  "dependencies": {
+    "jsdom": "^21.1.0"
+  },
+  "peerDependencies": {
+    "@vueuse/head": "1",
+    "express": "4",
+    "vite": "4 - 5",
+    "vue": "3",
+    "vue-router": "4"
+  },
+  "peerDependenciesMeta": {
+    "@vueuse/head": {
+      "optional": true
+    },
+    "vue-router": {
+      "optional": true
+    }
+  },
+  "exports": {
+    "./createApp": "./createApp.js",
+    "./createRouter": "./createRouter.js",
+    "./createSSR": "./createSSR.js"
+  },
+  "description": "Server Side Rendering for Vite + Vue",
+  "repository": "github:dmtkpv/vite-vue-ssr",
+  "author": "Dmitriy Karpov",
+  "license": "MIT",
+  "keywords": [
+    "vite",
+    "vue",
+    "ssr"
+  ]
+}
