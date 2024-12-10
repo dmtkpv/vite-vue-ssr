@@ -1,4 +1,4 @@
-# @dmtkpv/ssr
+# vite-vue-ssr
 Server Side Rendering for Vite + Vue.  
 Compatible with [`vue-router`](https://github.com/vuejs/router) and [`@unhead/vue`](https://github.com/unjs/unhead/tree/main/packages/vue).
 
@@ -35,7 +35,7 @@ import createSSR from 'vite-vue-ssr/createSSR';
 })();
 ```
 
-In your main entry
+Create entry point, e.g. `index.js`
 ```js
 import createApp from 'vite-vue-ssr/createApp'
 
@@ -44,9 +44,19 @@ export default createApp(App, app => {
 })
 ```
 
-Run server
+Create `index.html`
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script type="module" src="/index.js"></script>
+</body>
+</html>
+```
+
+Run the server
 ```shell
-node server
+node server.js
 ```
 
 ## Examples
@@ -67,7 +77,7 @@ export default createApp(App, (app, state) => {
 ```
 
 
-### vue-router
+### With vue-router
 ```js
 import createApp from 'vite-vue-ssr/createApp'
 import createRouter from 'vite-vue-ssr/createRouter'
@@ -77,6 +87,23 @@ export default createApp(App, app => {
     app.use(router);
     app.mount('body');
 })
+```
+
+
+### Prebuild
+
+Manually build the project
+```sh
+npx vite-vue-ssr
+```
+
+Then skip the server build
+```js
+import createSSR from 'vite-vue-ssr/createSSR';
+
+const ssr = await createSSR({
+    build: false
+});
 ```
 
 
