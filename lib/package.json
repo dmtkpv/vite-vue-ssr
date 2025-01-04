@@ -1,6 +1,6 @@
 {
   "name": "vite-vue-ssr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "bin": "./bin/build.js",
   "dependencies": {
@@ -10,7 +10,7 @@
   "peerDependencies": {
     "@unhead/vue": "1",
     "express": "4",
-    "vite": "4 - 5",
+    "vite": "4 - 6",
     "vue": "3",
     "vue-router": "4"
   },
